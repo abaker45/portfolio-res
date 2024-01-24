@@ -303,6 +303,9 @@ font-weight: 600;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
+    border: rgb(250,250,250) 0.1rem solid;
+    border-radius: 2rem;
+    padding: 1rem;
     justify-content: space-around;
 }
 
