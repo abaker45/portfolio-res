@@ -46,7 +46,7 @@ nav {
 }
 
 a {
-    color: plum;
+    color: rgb(224, 137, 224);
     text-decoration: none;
     text-decoration-color: white;
 }
@@ -185,6 +185,32 @@ font-weight: 600;
 .section_text_p1{
     text-align: center;
 }
+
+.typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #8c95d1; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .7s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #8c95d1 }
+  }
+
 .section_text_p2{
     font-size: 1.75rem;
     margin-bottom: 1rem;
@@ -236,6 +262,9 @@ font-weight: 600;
 }
 
 .btn-color-2:hover{
+    border: plum 0.1rem solid;
+}
+.btn-color-1:hover{
     border: plum 0.1rem solid;
 }
 .btn-container{
